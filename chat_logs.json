@@ -1,0 +1,26 @@
+{
+  "session-id-1": [
+    {
+      "role": "user",
+      "message": "Hi Neura-AI!",
+      "ts": 1737022500.123
+    },
+    {
+      "role": "assistant",
+      "message": "Hi — I'm Neura-AI (offline). How can I help?",
+      "ts": 1737022501.456
+    }
+  ],
+  "session-id-2": [
+    {
+      "role": "user",
+      "message": "Give me a crypto tip",
+      "ts": 1737022510.789
+    },
+    {
+      "role": "assistant",
+      "message": "Offline crypto tip: check volume and market cap...",
+      "ts": 1737022512.012
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neura-AI Chat 🤖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="chat-container">
+  <h2>Neura-AI Chat 🤖</h2>
+  <div id="chatbox"></div>
+
+  <div class="input-container">
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <div class="voice-settings">
+    <label for="voiceToggle">Enable AI Voices:</label>
+    <input type="checkbox" id="voiceToggle" checked />
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Link checkbox to voice function
+  const voiceToggle = document.getElementById('voiceToggle');
+
+  // Override speakText to respect the toggle
+  const originalSpeakText = speakText;
+  speakText = (text, gender="male") => {
+    if(voiceToggle.checked) {
+      originalSpeakText(text, gender);
+    }
+  };
+</script>
+</body>
+</html>

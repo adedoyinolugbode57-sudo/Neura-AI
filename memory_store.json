@@ -1,0 +1,32 @@
+{
+  "session-id-1": {
+    "history": [
+      {
+        "role": "user",
+        "content": "Hi Neura-AI!",
+        "ts": 1737022500.123
+      },
+      {
+        "role": "assistant",
+        "content": "Hi — I'm Neura-AI (offline). How can I help?",
+        "ts": 1737022501.456
+      }
+    ],
+    "created_at": 1737022500.123
+  },
+  "session-id-2": {
+    "history": [
+      {
+        "role": "user",
+        "content": "Give me a crypto tip",
+        "ts": 1737022510.789
+      },
+      {
+        "role": "assistant",
+        "content": "Offline crypto tip: check volume and market cap...",
+        "ts": 1737022512.012
+      }
+    ],
+    "created_at": 1737022510.789
+  }
+}

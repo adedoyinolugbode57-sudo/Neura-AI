@@ -1,0 +1,22 @@
+{
+  "default_memory": 12,                          // Number of recent messages remembered per session
+  "max_memory_per_session": 50,                  // Max messages stored to prevent huge JSON files
+  "allowed_models": ["offline", "gpt-3.5-turbo", "gpt-4"],  // Models available for user selection
+  "default_model": "offline",                    // Model used if none selected
+  "max_tokens": 400,                             // Max tokens per response (for OpenAI)
+  "temperature": 0.7,                            // Creativity level of AI response
+  "rate_limit_per_minute": 20,                   // Max messages per minute per session
+  "enable_logging": true,                        // Log all conversations
+  "logging_file": "chat_logs.json",             // File to store chat logs
+  "fallback_responses": [                        // Offline fallback responses
+    "I'm offline right now — I can still help with general guidance.",
+    "Offline: try breaking the task into smaller steps and asking me for each step.",
+    "Hi — I'm Neura-AI (offline). How can I help?"
+  ],
+  "ui_settings": {                               // Optional frontend hints
+    "theme": "dark",
+    "bot_color": "#f1f0f0",
+    "user_color": "#1e90ff",
+    "typing_speed": 30
+  }
+}
